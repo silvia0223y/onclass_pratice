@@ -1,0 +1,11 @@
+  <%= form_for candidate do |f| %>
+    name: <%= f.text_field :name %><br />
+    age: <%= f.text_field :age %><br />
+    party: <%= f.text_field :party %><br />
+    politics: <%= f.text_field :politics %><br />
+
+  <%= f.submit %>
+
+<% end %>  
+
+<!-- partial file最好只接收參數,不要自己從空氣中抓參數,這樣比較乾淨 -->
